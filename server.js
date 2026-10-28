@@ -1,6 +1,6 @@
-const env = require('./Backend/config/env');
-const app = require('./Backend/app');
-const { connectDB } = require('./Backend/config/db');
+const env = require('./config/env');
+const app = require('./app');
+const { connectDB } = require('./config/db');
 
 async function start() {
   try {
