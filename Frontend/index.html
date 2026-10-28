@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Pulse - share moments, follow friends and join the conversation." />
+    <meta name="theme-color" content="#7c5cff" />
+    <title>Pulse - Mini Social Network</title>
+    <link rel="icon" href="/img/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/theme-init.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="bg-orbs" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+
+    <!-- Rendered by app.js once the session is known -->
+    <header id="topbar" class="topbar" hidden></header>
+
+    <div id="shell" class="shell">
+      <aside id="sidebar-left" class="sidebar sidebar-left" hidden></aside>
+      <main id="main" class="main" tabindex="-1" aria-live="polite"></main>
+      <aside id="sidebar-right" class="sidebar sidebar-right" hidden></aside>
+    </div>
+
+    <nav id="dock" class="dock" aria-label="Primary" hidden></nav>
+
+    <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+    <div id="modal-root"></div>
+
+    <noscript>
+      <p class="noscript">Pulse needs JavaScript enabled to run.</p>
+    </noscript>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>
